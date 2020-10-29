@@ -1,0 +1,74 @@
+
+@mixin flex-tl
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+@mixin flex-tc
+    display: flex
+    justify-content: center
+    align-items: flex-start
+@mixin flex-tr
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+@mixin flex-cl
+    display: flex
+    justify-content: flex-start
+    align-items: center
+@mixin flex-cc
+    display: flex
+    justify-content: center
+    align-items: center
+@mixin flex-cr
+    display: flex
+    justify-content: flex-end
+    align-items: center  
+@mixin flex-bl
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+@mixin flex-bc
+    display: flex
+    justify-content: center
+    align-items: flex-end
+@mixin flex-br
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+
+
+.testP
+    @include flex-cc
+    
+    height: 100vh
+    width: 100%
+    background-color: #1abc9c
+
+.test2
+    @include flex-tr
+        
+    height: 500px
+    width: 500px
+    background-color: #f1c40f
+
+.test3
+    @include flex-cc
+    
+    height: 250px
+    width: 250px
+    background-color: #e67e22
+
+.test4
+    @include flex-tr
+    
+    height: 125px
+    width: 125px
+    background-color: #e74c3c
+
+.test5
+    height: 62.25px
+    width: 62.25px
+    background-color: #9b59b6
+        
+        
+

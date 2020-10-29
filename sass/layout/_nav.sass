@@ -3,20 +3,19 @@
     /* Here's a first simple navbar create with @mixin ready to be @include */
 
 @mixin nav1()
-
     nav
         background: lighten( #011752,5%)
         width: 100%
         height: 100px
-        border-bottom: 3px solid darken($colorblue-var1,12%)
+        border-bottom: 3px solid darken($colorblue-default,12%)
     ul
         margin-right: 25px
         float: right
     li
         display: inline
         line-height: 100px
-        font-size: 2rem
-        margin-left: 50px
+        font-size: 2em
+    
     a
         font-family: Arial, sans-serif
         position: relative
@@ -44,5 +43,7 @@
             &::after
                 transform: translate(-50%) scaleX(1)
 
+
+
 /*No need to create a nav the @include have it on his mixin* exemple/
-@include nav1()
+

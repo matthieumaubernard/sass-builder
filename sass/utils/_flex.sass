@@ -11,6 +11,8 @@
     display: flex
     justify-content: flex-end
     align-items: flex-start
+
+
 @mixin flex-cl
     display: flex
     justify-content: flex-start
@@ -22,7 +24,9 @@
 @mixin flex-cr
     display: flex
     justify-content: flex-end
-    align-items: center  
+    align-items: center
+
+
 @mixin flex-bl
     display: flex
     justify-content: flex-start
@@ -36,39 +40,20 @@
     justify-content: flex-end
     align-items: flex-end
 
+@mixin flex-row
+    display: flex
+    flex-direction: row
+@mixin flex-column
+    display: flex
+    flex-direction: column
+@mixin flex-wrap
+    display: flex
+    flex-wrap: wrap
 
-.testP
-    @include flex-cc
-    
-    height: 100vh
-    width: 100%
-    background-color: #1abc9c
 
-.test2
-    @include flex-tr
-        
-    height: 500px
-    width: 500px
-    background-color: #f1c40f
-
-.test3
-    @include flex-cc
-    
-    height: 250px
-    width: 250px
-    background-color: #e67e22
-
-.test4
-    @include flex-tr
-    
-    height: 125px
-    width: 125px
-    background-color: #e74c3c
-
-.test5
-    height: 62.25px
-    width: 62.25px
-    background-color: #9b59b6
-        
-        
+/* Clients choice */
+@mixin flexChoice ($justify,$alignItems)
+    display: flex
+    justify-content: $justify
+    align-items: $alignItems
 
